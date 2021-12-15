@@ -1,0 +1,64 @@
+This directory contains the updated version for our university assistant chatbot.
+
+1) Files added:
+
+actions/database.py
+
+This python file contains code for retrieving information from web. Using beatifulsoup package three method were created: 
+
+get_all_courses
+get_courses_per_semester
+get_course_information
+
+The following urls were used in all methods and adjusted when necessary
+
+URL_MAIN = 'https://www.di.uoa.gr'
+URL_COURSES = "https://www.di.uoa.gr/en/studies/undergraduate/courses"
+
+2) files updated:
+
+a) actions.py
+
+3 new costum actions were constructed:
+
+action_list_courses
+action_ask_course_name
+action_give_course_info
+
+b) nlu.yml 
+
+Added 1 new intent that evokes the new action "action_list_courses":
+- intent: request_list_of_courses_per_semester
+
+Changed existing utterances and added new entities.
+Changed names of some existing intents.
+
+c) domain.yml
+
+Added the three new actions.
+Changed the names of intents to be aligned with nlu data
+
+d) stories
+
+Added new story "courses_list_path" 
+Changed existing story "course_info_path"
+
+3) Problems met in training:
+
+After the above changes, it was decided to run the following commands in a virtual environment (rasanenv1) that contains all necessary packages and also rasa:
+
+rasa run actions
+rasa train
+
+However, the first command has not produced an output yet and is still runing. The following message is currently showed in conda terminal:
+
+2021-12-15 14:13:14 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2021-12-15 14:13:14 INFO     rasa_sdk.executor  - Registered function for 'action_list_courses'.
+2021-12-15 14:13:14 INFO     rasa_sdk.executor  - Registered function for 'action_ask_course_name'.
+2021-12-15 14:13:14 INFO     rasa_sdk.executor  - Registered function for 'action_give_course_info'.
+2021-12-15 14:13:14 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http://0.0.0.0:5055
+
+
+
+
+
