@@ -1,0 +1,53 @@
+version: "3.0"
+stories:
+  - story: schedule_path
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+      - intent: request_schedule
+      - action: utter_ask_for_semester
+      - intent: supply_semester_info
+        entities:
+        - semester
+      - action: utter_inform_schedule
+      - intent: thankyou
+      - action: utter_you_are_welcome
+      - intent: deny
+      - action: utter_goodbye
+      - intent: goodbye
+
+  - story: courses_list_path
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+      - intent: request_list_of_courses_per_semester
+      - action: utter_ask_for_semester
+      - intent: supply_semester_info
+        entities:
+        - semester
+      - action: action_list_courses
+      - intent: thankyou
+      - action: utter_you_are_welcome
+      - intent: deny
+      - action: utter_goodbye
+      - intent: goodbye
+
+  - story: course_info_path
+    steps:
+      - intent: greeting
+      - action: utter_greeting
+      - intent: request_course_information
+      - action: utter_ask_for_semester
+      - intent: supply_semester_info
+        entities:
+        - semester
+      - action: action_ask_course_name
+      - intent: supply_course_name
+        entities:
+        - course
+      - action: action_give_course_info
+      - intent: thankyou
+      - action: utter_you_are_welcome
+      - intent: deny
+      - action: utter_goodbye
+      - intent: goodbye
