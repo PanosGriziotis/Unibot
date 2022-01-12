@@ -23,7 +23,7 @@ def get_all_courses(URL):
 
 def get_courses_per_semester(semester_name):
     all_courses_dict = get_all_courses(URL_COURSES)
-    if semester_name in all_courses_dict.keys():
+    if str(semester_name) in all_courses_dict.keys():
         courses = all_courses_dict.get(semester_name)
         courses_names = '\n'.join(list(courses.keys()))
         return f'{semester_name}\n\n{courses_names}'
@@ -33,7 +33,7 @@ def get_courses_per_semester(semester_name):
 def get_course_information (course_name,semester_name):
     all_courses_dict = get_all_courses(URL_COURSES)
     courses = all_courses_dict.get(semester_name)
-    if course_name in courses.keys():
+    if str(course_name) in courses.keys():
         url = courses.get(course_name)
     else:
         return f"I didn't understand {semester_name}. Is it spelled correctly?"
@@ -45,3 +45,5 @@ def get_course_information (course_name,semester_name):
         text = tag.find('p').text
         if text != '':
             return f'{semester_name}\t\tCourse: {course_name}\n\n {text}'
+
+#print (get_course_information('Linear Algebra','Semester: 1st'))
