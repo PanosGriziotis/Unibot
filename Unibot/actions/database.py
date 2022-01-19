@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 URL_MAIN = 'https://www.di.uoa.gr'
 URL_COURSES = "https://www.di.uoa.gr/en/studies/undergraduate/courses"
@@ -22,6 +23,7 @@ def get_all_courses(URL):
     return all_courses_dict
 
 def get_courses_per_semester(semester_name):
+
     all_courses_dict = get_all_courses(URL_COURSES)
     if str(semester_name) in all_courses_dict.keys():
         courses = all_courses_dict.get(semester_name)
@@ -46,4 +48,20 @@ def get_course_information (course_name,semester_name):
         if text != '':
             return f'{semester_name}\t\tCourse: {course_name}\n\n {text}'
 
-#print (get_course_information('Linear Algebra','Semester: 1st'))
+def normalise_semester_entity (semester_entity):
+    word2ordinal = {'first':'1st','second':'2nd','third':'3rd','fourth':'4th','fifth':'5th','sixth':'6th','seventh':'7th','eighth':'8th'}
+    num2ordinal = {'1':'1st','2':'2nd','3':'3rd','4':'4th','5':'5th','6':'6th','7':'7th','8':'8th'}
+
+    token_list = re.findall(r'\b(?!(?i)semester\b)[\w\d]+',semester_entity) # leave out 'semester'
+
+    for token in token_list:
+        if token.lower() in word2ordinal.keys(): # e.g. first
+            ordinal = word2ordinal[token]
+        if token.lower() in num2ordinal.values(): # e.g. 1st
+            ordinal = token
+        if token in num2ordinal.keys(): # e.g. 1
+            ordinal = num2ordinal[token]
+
+            return ordinal
+
+print (get_course_information('Linear Algebra','Semester: 1st'))

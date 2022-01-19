@@ -1,4 +1,4 @@
-version: "3.0"
+version: "2.0"
 
 nlu:
 - intent: greeting
@@ -96,9 +96,9 @@ nlu:
 
 - intent: supply_semester_info
   examples: |
-    - [Semester: 1st](semester)
-    - [Semester: 2nd](semester)
-    - [Semester: 3rd](semester)
+    - [first semester](semester)
+    - [1st Semester](semester)
+    - [2nd SEMESTER](semester)
 
 - intent: supply_course_name
   examples: |
@@ -130,3 +130,7 @@ nlu:
     - I want know about [Object-Oriented Programming](course)
     - I want know about [Propability and Statistics (in greek)](course)
     - I want know about [Signals and Systems](course)
+
+- regex: semester
+  examples: |
+    - [a-zA-Z0-9]+(?:st|nd|rd|th)\s(?i)semester|(?i)semester\s[a-zA-Z0-9]+(?:|st|nd|rd|th)

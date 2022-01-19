@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a84bba4-328e-4a9e-8981-4ec7221e06e3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/cache.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp5mbup9l5/oov_words.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp5mbup9l5/vocabularies.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp5qcjzxdh/feature_to_idx_dict.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp62epfd9s/oov_words.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp62epfd9s/vocabularies.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp70rirebx/featurizer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmp70rirebx/memorized_turns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/featurizer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.data_example.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.entity_tag_specs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.fake_features.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.label_data.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.meta.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.priority.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.tf_model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbb3rp1da/ted_policy.tf_model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpbbt2zsx4/patterns.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpdx01zzwl/featurizer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpdx01zzwl/rule_only_data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpdx01zzwl/rule_policy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.data_example.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.entity_tag_specs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.index_label_id_mapping.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.label_data.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.sparse_feature_sizes.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.tf_model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/DIETClassifier.tf_model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmpkuh_kzj4/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/featurizer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.data_example.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.entity_tag_specs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.fake_features.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.label_data.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.label_quantiles.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.meta.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.priority.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.tf_model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.rasa/cache/tmplowr0drt/unexpected_intent_policy.tf_model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../REPORT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actions/actions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../actions/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../credentials.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/nlu.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/rules.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/stories.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../domain.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../endpoints.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../models/20211215-132143-golden-eel.tar.gz" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20Kq9kNcoOZWWxkC2UitWxOW3YD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="DialogueSystemsCourse/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

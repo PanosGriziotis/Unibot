@@ -1,0 +1,20 @@
+Chatbot Description:
+
+This chatbot is task-oriented dialogue system and is designed for providing useful information to students of a university department.
+
+There are two main requests that can be fullfiled by the system:
+
+1. asking information about the department's current timetable of the classes given a specific semester
+2. asking a detailed description of a specific course
+
+According to the above requests, the system is assigned to retrieve information from an online source. Therefore, after some specific turn alternations
+between the system and the user, the system parses the related web page and returns the information as a response.
+
+Examples:
+
+For the 1st request (classes' timetable) the system could parse the following related web page of the Department of Information & Telecommunications:
+https://www.di.uoa.gr/studies/undergraduate/schedules
+For the 2nd request (course description) given that the user asked information for the Algebra course the system could parse the following web page: 
+https://www.di.uoa.gr/studies/undergraduate/31
+
+Note: Further requests may be added in future stages of the developement of the chatbot and current requests may be changed.

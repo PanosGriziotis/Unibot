@@ -1,4 +1,4 @@
-version: "3.0"
+version: "2.0"
 
 intents:
   - request_schedule:
@@ -25,21 +25,17 @@ slots:
   semester:
     type: text
     influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: semester
   course:
     type: text
     influence_conversation: false
-    mappings:
-    - type: from_entity
-      entity: course
 
 responses:
   utter_greeting:
   - text: "Hello! You are talking to the smart university assistant. What do you want to know?"
   utter_ask_for_semester:
   - text: "Ok. What is your semester?"
+  utter_ask_for_course_name:
+  - text: "What is the name of the course?"
   utter_inform_schedule:
   - text: "The current timetable for this semester is the following"
   utter_inform_course:
@@ -48,13 +44,11 @@ responses:
   - text: "You're welcome. Do you want anything else?"
   utter_goodbye:
   - text: "Goodbye"
-  utter_default:
-  - text: "Sorry, I didn't understand you, please try input something else"
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
 actions:
   - action_list_courses
-  - action_ask_course_name
   - action_give_course_info
