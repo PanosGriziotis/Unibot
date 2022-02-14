@@ -1,54 +1,46 @@
 version: "2.0"
-
-intents:
-  - request_schedule:
-      use_entities: []
-  - request_course_information:
-      use_entities: []
-  - supply_semester_info:
-      use_entities: []
-  - supply_course_name:
-      use_entities: []
-  - request_list_of_courses_per_semester:
-      use_entities: []
-  - greeting
-  - goodbye
-  - affirm
-  - deny
-  - thankyou
-
-entities:
-  - semester
-  - course
-
-slots:
-  semester:
-    type: text
-    influence_conversation: false
-  course:
-    type: text
-    influence_conversation: false
-
-responses:
-  utter_greeting:
-  - text: "Hello! You are talking to the smart university assistant. What do you want to know?"
-  utter_ask_for_semester:
-  - text: "Ok. What is your semester?"
-  utter_ask_for_course_name:
-  - text: "What is the name of the course?"
-  utter_inform_schedule:
-  - text: "The current timetable for this semester is the following"
-  utter_inform_course:
-  - text: "Here is a detailed description of this course"
-  utter_you_are_welcome:
-  - text: "You're welcome. Do you want anything else?"
-  utter_goodbye:
-  - text: "Goodbye"
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
+intents:
+- inform_num_semester:
+    use_entities: []
+- inform_course_name:
+    use_entities: []
+- request_course_description
+- request_course_general_info
+- greeting
+- affirm
+- thankyou
+- goodbye
+entities:
+- num_semester
+- course_name
+slots:
+  num_semester:
+    type: any
+  course_name:
+    type: text
+responses:
+  utter_greeting:
+  - text: "Γειά σου! Μιλάς με το Unibot, τον ακαδημαϊκό βοηθό. Μπορώ να σου λύσω απορίες για όποιο μάθημα σε ενδιαφέρει. Πως μπορώ να σε βοηθήσω?"
+  utter_ask_num_semester:
+  - text: "Οκ. Ποιό είναι το εξάμηνό σου;"
+  utter_ask_course_name:
+  - text: "Ποιό είναι το όνομα του μαθήματος που σε ενδιαφέρει;"
+  utter_you_are_welcome:
+  - text: "Κανένα πρόβλημα!"
+  utter_goodbye:
+  - text: "Καλή συνέχεια!"
 actions:
-  - action_list_courses
-  - action_give_course_info
+  - action_supply_course_description
+  - validate_course_form
+forms:
+  course_form:
+    required_slots:
+        num_semester:
+          - type: from_entity
+            entity: num_semester
+        course_name:
+          - type: from_entity
+            entity: course_name

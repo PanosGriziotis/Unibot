@@ -1,45 +1,20 @@
-version: "3.0"
+version: "2.0"
 stories:
-  - story: schedule_path
-    steps:
-      - intent: greeting
-      - action: utter_greeting
-      - intent: request_schedule
-      - action: utter_ask_for_semester
-      - intent: supply_semester_info
-      - action: utter_inform_schedule
-      - intent: thankyou
-      - action: utter_you_are_welcome
-      - intent: deny
-      - action: utter_goodbye
-      - intent: goodbye
 
-  - story: courses_list_path
+  - story: Course Description
     steps:
-      - intent: greeting
-      - action: utter_greeting
-      - intent: request_list_of_courses_per_semester
-      - action: utter_ask_for_semester
-      - intent: supply_semester_info
-      - action: action_list_courses
-      - intent: thankyou
-      - action: utter_you_are_welcome
-      - intent: deny
-      - action: utter_goodbye
-      - intent: goodbye
-
-  - story: course_info_path
-    steps:
-      - intent: greeting
-      - action: utter_greeting
-      - intent: request_course_information
-      - action: utter_ask_for_semester
-      - intent: supply_semester_info
-      - action: utter_ask_for_course_name
-      - intent: supply_course_name
-      - action: action_give_course_info
-      - intent: thankyou
-      - action: utter_you_are_welcome
-      - intent: deny
-      - action: utter_goodbye
-      - intent: goodbye
+    - intent: greeting
+    - action: utter_greeting
+    - intent: request_course_description
+    - action: course_form
+    - active_loop: course_form
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Γραμμική Άλγεβρα
+    - active_loop: null
+    - action: action_supply_course_description
+    - intent: thankyou
+    - action: utter_you_are_welcome
+    - intent: goodbye
+    - action: utter_goodbye
