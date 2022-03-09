@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Θέλω να μάθω για το αντικείμενο ενός μαθήματος",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.7862645387649536
+    }
+  },
+  {
+    "text": "Θεωρία Πληροφορίας και Κωδίκων",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "greeting",
+      "confidence": 0.3308449387550354
+    }
+  }
+]

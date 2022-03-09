@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Θα ήθελα μία περιγραφή για το μάθημα",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.9913410544395447
+    }
+  },
+  {
+    "text": "Καλημέρα",
+    "intent": "greeting",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.4122190773487091
+    }
+  },
+  {
+    "text": "θέλω βοήθεια",
+    "intent": "dont_know",
+    "intent_prediction": {
+      "name": "greeting",
+      "confidence": 0.35043609142303467
+    }
+  },
+  {
+    "text": "Θέλω να μάθω για τη Γραμμική Άλγεβρα",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.4064353406429291
+    }
+  }
+]

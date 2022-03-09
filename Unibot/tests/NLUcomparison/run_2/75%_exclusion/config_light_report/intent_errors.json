@@ -1,0 +1,26 @@
+[
+  {
+    "text": "8ο",
+    "intent": "inform_num_semester",
+    "intent_prediction": {
+      "name": "greeting",
+      "confidence": 0.7770374417304993
+    }
+  },
+  {
+    "text": "θέλω να μάθω πότε διδάσκεται ένα μάθημα",
+    "intent": "request_course_schedule",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.44371047616004944
+    }
+  },
+  {
+    "text": "Γραμμική Άλγεβρα",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.3701985776424408
+    }
+  }
+]

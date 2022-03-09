@@ -1,0 +1,32 @@
+[
+  {
+    "text": "[Ανάπτυξη Λογισμικού για Πληροφοριακά Συστήματα] (course_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 20,
+        "confidence_entity": 0.28941279649734497,
+        "value": "[Ανάπτυξη Λογισμικού",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 25,
+        "end": 50,
+        "confidence_entity": 0.31961047649383545,
+        "value": "Πληροφοριακά Συστήματα] (",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 61,
+        "end": 62,
+        "confidence_entity": 0.41788238286972046,
+        "value": ")",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

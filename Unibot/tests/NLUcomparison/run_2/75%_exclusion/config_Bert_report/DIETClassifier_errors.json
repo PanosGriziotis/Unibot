@@ -1,0 +1,71 @@
+[
+  {
+    "text": "1ο εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "1ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "8ο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "8ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Γραμμική Άλγεβρα",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Γραμμική Άλγεβρα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Προγραμματισμός Συστήματος",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Προγραμματισμός Συστήματος",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.7511900067329407,
+        "value": "Προγραμματισμός",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Φωτονική",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Φωτονική",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

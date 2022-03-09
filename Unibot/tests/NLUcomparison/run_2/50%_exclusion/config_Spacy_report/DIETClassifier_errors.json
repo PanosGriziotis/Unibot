@@ -1,0 +1,51 @@
+[
+  {
+    "text": "Θέλω πληροφορίες για το περιεχόμενο του μαθήματος",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 5,
+        "end": 16,
+        "confidence_entity": 0.3954780399799347,
+        "value": "πληροφορίες",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Θέλω πληροφορίες σχετικά με ένα μάθημα",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 5,
+        "end": 16,
+        "confidence_entity": 0.39165008068084717,
+        "value": "πληροφορίες",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Προγραμματισμός Συστήματος",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Προγραμματισμός Συστήματος",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9854702949523926,
+        "value": "Προγραμματισμός",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

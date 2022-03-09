@@ -1,0 +1,28 @@
+[
+  {
+    "text": "3ο εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "3ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "[Ανάπτυξη Λογισμικού για Πληροφοριακά Συστήματα] (course_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 1,
+        "end": 9,
+        "confidence_entity": 0.6577532887458801,
+        "value": "Ανάπτυξη",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

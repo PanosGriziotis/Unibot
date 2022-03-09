@@ -8,69 +8,80 @@ import pandas as  pd
 import re
 import numpy as np
 
-URL_MAIN = 'https://www.di.uoa.gr'
-URL_COURSES = "https://www.di.uoa.gr/studies/undergraduate/courses"
-URL_WINTER_19 = 'https://www.di.uoa.gr/schedule/19-20/timetable_PPS_winter1920.html'
-URL_SPRING_19 = 'https://www.di.uoa.gr/schedule/19-20/timetable_PPS_spring1920.html'
+URL_MAIN= 'https://www.di.uoa.gr'
+URL_COURSES = URL_MAIN+"/studies/undergraduate/courses"
+URL_WINTER_19 = URL_MAIN+'/schedule/19-20/timetable_PPS_winter1920.html'
+URL_SPRING_19 = URL_MAIN+'/schedule/19-20/timetable_PPS_spring1920.html'
+
 
 def parse_page (url):
     page = requests.get(url)
     return BeautifulSoup(page.content,'html.parser')
 
 def get_all_courses(url):
-    all_courses_dict = {}
-    soup = parse_page(url)
-    all_semesters_tables = soup.find_all('table', class_="table table-striped cols-10")
-    for table_class in all_semesters_tables:
-        semester = table_class.find('caption').get_text().strip()
-        courses_classes = table_class.find_all('td', class_="views-field views-field-title")
-        courses_name_url = {}
-        for course in courses_classes:
-            url = course.find('a').get('href')
-            course_name = course.find('a').get_text()
-            courses_name_url[course_name.strip()] = url.strip()
-        all_courses_dict[semester] = courses_name_url
+    """
+    Returns a dictionary
+    k: semester name
+    v: dictionary [k: course name v: url of course's description]
+    """
+    all_courses_dict = {} # main dict
 
+    soup = parse_page(url)
+
+    for table_class in soup.find_all('table', class_="table table-striped cols-10"):
+
+        semester_name = table_class.find('caption').get_text().strip()
+
+        sem_courses= table_class.find_all('td', class_="views-field views-field-title")
+        
+        sem_courses_urls = {} # nested dict
+
+        for sem_course in sem_courses:
+            url = sem_course.find('a').get('href')
+            course_name = sem_course.find('a').get_text()
+            sem_courses_urls[course_name.strip()] = url.strip()
+
+        all_courses_dict[semester_name] = sem_courses_urls
     return all_courses_dict
 
-
 def get_semesters_list():
+    """ Returns a list of available semester names """
     all_courses_dict = get_all_courses(URL_COURSES)
     return list(all_courses_dict.keys())
 
-
-def get_courses_list_per_semester(semester_name):
+def get_semester_courses(semester_name):
+    """ Returns a list of course names for a given semester """
     all_courses_dict = get_all_courses(URL_COURSES)
     if str(semester_name) in all_courses_dict.keys():
-        courses = all_courses_dict.get(semester_name)
-        courses_names = list(courses.keys())
-
+        courses_names = list(all_courses_dict.get(semester_name).keys())
         return courses_names
     else:
         return None
 
-
-def get_course_description(course_name, semester_name):
+def get_course_description(course_name):
+    """ Return text description of a given text """
     all_courses_dict = get_all_courses(URL_COURSES)
-    courses = all_courses_dict.get(semester_name)
-    if str(course_name) in courses.keys():
-        url = courses.get(course_name)
-        soup = parse_page(URL_MAIN + url)
-        results = soup.find(id="block-corporate-lite-content")
-        content = results.find_all('div', class_="views-field views-field-body")
-        for tag in content:
-            text = tag.find('p').text
-            if text != '':
-                return text
+    for k, courses in all_courses_dict.items():
+        
+        if str(course_name) in courses.keys():
+            url = courses.get(course_name)
+            soup = parse_page(URL_MAIN + url)
+            results = soup.find(id="block-corporate-lite-content")
+            content = results.find_all('div', class_="views-field views-field-body")
+            
+            for tag in content:
+                text = tag.find('p').text
+                if text != '':
+                    return text
 
 def get_schedules(url1,url2):
+    """ Return full dataframe of schedules"""
     dfs = []
 
     for i in [url1,url2]:
 
         soup = parse_page(i)
         schedule_rows = []
-        table = soup.find('table')
         rows = soup.find_all('tr')
         global day
 
@@ -99,7 +110,10 @@ def get_schedules(url1,url2):
     return n_df
 
 def get_schedule_dict_for_course (course_name):
-    
+    """ Return schedule dictionary for specific course 
+        k: course name 
+        v: dictionary [keys: professor, time, day, place - values: tuple of relevant info for each key] 
+    """
     schedule_df = get_schedules(URL_WINTER_19,URL_SPRING_19)
         
     mask = np.column_stack([schedule_df[col].str.contains(rf'{course_name}', na=False) for col in schedule_df])
@@ -144,14 +158,3 @@ def get_schedule_dict_for_course (course_name):
                 else:
                     schedule_dict[course_key] = course_dict
     return schedule_dict
-
-def message(course_name):
-    schedule_dict = get_schedule_dict_for_course(course_name)
-    for course, dic in schedule_dict.items():
-        for key in dic:
-            if type(dic[key]) == tuple:
-                dic[key] = ' και '.join(map(str,dic[key]))
-        
-        print(f'To μάθημα {course} διδάσκεται την/τις ημέρα/-ες {dic["day"]} με τον/τους καθηγητή/-ές {dic["professor"]} και τις ώρες {dic["time"]}  στην/στις αίθουσα/-ες: {dic["aula"]}')
-
-

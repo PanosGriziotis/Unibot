@@ -1,0 +1,53 @@
+[
+  {
+    "text": "Θέλω να μάθω για τη Γραμμική Άλγεβρα",
+    "entities": [
+      {
+        "start": 20,
+        "end": 36,
+        "value": "Γραμμική Άλγεβρα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.7387397289276123,
+        "value": "Γραμμική",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "[Ανάπτυξη Λογισμικού για Πληροφοριακά Συστήματα] (course_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.45537322759628296,
+        "value": "Λογισμικού",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 25,
+        "end": 37,
+        "confidence_entity": 0.38847115635871887,
+        "value": "Πληροφοριακά",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 38,
+        "end": 47,
+        "confidence_entity": 0.4145054519176483,
+        "value": "Συστήματα",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

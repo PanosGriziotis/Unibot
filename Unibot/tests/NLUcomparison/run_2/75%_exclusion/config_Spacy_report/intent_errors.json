@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Θέλω πληροφορίες για το περιεχόμενο του μαθήματος",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "inform_course_name",
+      "confidence": 0.6240575909614563
+    }
+  },
+  {
+    "text": "οκ ευχαριστώ γειά",
+    "intent": "thankyou",
+    "intent_prediction": {
+      "name": "greeting",
+      "confidence": 0.9733052253723145
+    }
+  },
+  {
+    "text": "Θέλω πληροφορίες σχετικά με ένα μάθημα",
+    "intent": "request_course_general_info",
+    "intent_prediction": {
+      "name": "inform_num_semester",
+      "confidence": 0.22074268758296967
+    }
+  }
+]

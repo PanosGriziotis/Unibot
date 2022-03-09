@@ -1,0 +1,47 @@
+[
+  {
+    "text": "Γραμμική Άλγεβρα",
+    "entities": [
+      {
+        "start": 0,
+        "end": 16,
+        "value": "Γραμμική Άλγεβρα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Προγραμματισμός Συστήματος",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Προγραμματισμός Συστήματος",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9961925745010376,
+        "value": "Προγραμματισμός",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Φωτονική",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Φωτονική",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

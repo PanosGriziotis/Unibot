@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Θέλω πληροφορίες σχετικά με ένα μάθημα",
+    "intent": "request_course_general_info",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.3925554156303406
+    }
+  }
+]

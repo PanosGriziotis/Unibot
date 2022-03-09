@@ -1,0 +1,35 @@
+[
+  {
+    "text": "Προγραμματισμός Συστήματος",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Προγραμματισμός Συστήματος",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.7383458614349365,
+        "value": "Προγραμματισμός",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Φωτονική",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Φωτονική",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

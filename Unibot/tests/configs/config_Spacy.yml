@@ -1,0 +1,29 @@
+language: el
+
+pipeline:
+  - name: SpacyNLP
+    model: "el_core_news_md"
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 50
+    num_transformer_layers: 0
+    batch_size: [32, 64]
+    embedding_dimension: 30
+    weight_sparcity: 0.80
+    hidden_layer_sizes:
+      text: [256, 128]
+  - name: FallbackClassifier
+    threshold: 0.7
+
+
+policies:
+ - name: TEDPolicy
+   max_history: 10
+   epochs: 10
+ - name: RulePolicy

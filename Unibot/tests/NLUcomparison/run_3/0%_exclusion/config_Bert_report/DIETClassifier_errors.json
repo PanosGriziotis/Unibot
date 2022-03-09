@@ -1,0 +1,23 @@
+[
+  {
+    "text": "Προγραμματισμός Συστήματος",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Προγραμματισμός Συστήματος",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.9198712110519409,
+        "value": "Προγραμματισμός",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

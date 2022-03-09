@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Καλημέρα",
+    "intent": "greeting",
+    "intent_prediction": {
+      "name": "inform_course_name",
+      "confidence": 0.34535476565361023
+    }
+  },
+  {
+    "text": "θέλω βοήθεια",
+    "intent": "dont_know",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.2414509356021881
+    }
+  },
+  {
+    "text": "Θέλω να μάθω για τη Γραμμική Άλγεβρα",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.555456280708313
+    }
+  },
+  {
+    "text": "[Ανάπτυξη Λογισμικού για Πληροφοριακά Συστήματα] (course_name)",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.4664863646030426
+    }
+  }
+]
