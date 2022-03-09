@@ -1,0 +1,47 @@
+[
+  {
+    "text": "3ο εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "3ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Αλγόριθμοι & Πολυπλοκότητα",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Αλγόριθμοι & Πολυπλοκότητα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Θεωρία Πληροφορίας και Κωδίκων",
+    "entities": [
+      {
+        "start": 0,
+        "end": 30,
+        "value": "Θεωρία Πληροφορίας και Κωδίκων",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.8912262916564941,
+        "value": "και Κωδίκων",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

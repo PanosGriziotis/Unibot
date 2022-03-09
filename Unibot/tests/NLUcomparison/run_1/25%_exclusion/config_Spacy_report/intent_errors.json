@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Θέλω να μάθω για το αντικείμενο ενός μαθήματος",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.5930754542350769
+    }
+  },
+  {
+    "text": "Θα ήθελα να μάθω για τα Ασύρματα Δίκτυα Αισθητήρων",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.36207976937294006
+    }
+  }
+]

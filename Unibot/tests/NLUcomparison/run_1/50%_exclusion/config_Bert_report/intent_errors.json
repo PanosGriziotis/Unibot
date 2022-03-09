@@ -1,0 +1,10 @@
+[
+  {
+    "text": "δυσκολεύομαι να θυμηθώ. Μπορείς να βοηθήσεις;",
+    "intent": "dont_know",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.5229935646057129
+    }
+  }
+]

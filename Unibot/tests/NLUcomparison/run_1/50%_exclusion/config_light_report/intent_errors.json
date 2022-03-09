@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Θέλω να μάθω για ένα μάθημα",
+    "intent": "request_course_general_info",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.3048105537891388
+    }
+  },
+  {
+    "text": "Αλγόριθμοι & Πολυπλοκότητα",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.40285617113113403
+    }
+  },
+  {
+    "text": "Θεωρία Πληροφορίας και Κωδίκων",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "request_course_general_info",
+      "confidence": 0.25051429867744446
+    }
+  }
+]
