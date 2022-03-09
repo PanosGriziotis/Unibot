@@ -27,12 +27,13 @@ Set up your action server in one terminal window.
 
 ```bash
 rasa run actions
+```
 
 Step 3: 
 
 Talk to the bot:
 
-```
+```bash
 rasa shell --debug
 ```
 
