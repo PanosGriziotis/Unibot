@@ -77,5 +77,3 @@ You can test the bot on the test conversations by:
 This will run [end-to-end testing](https://rasa.com/docs/rasa/user-guide/testing-your-assistant/#end-to-end-testing) on the conversations in `tests/test_stories.yml`.
 
 All tests must pass.
-
-under the hood. To simply talk to the bot, you can remove this flag.
