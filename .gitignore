@@ -1,4 +1,6 @@
 /.idea
+/models
+/tests
 /.idea/workspace.xml
 Unibot_Report.docx
 nlu_model_comparison_graph(costum featurizer).pdf
