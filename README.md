@@ -96,3 +96,6 @@ This will run [end-to-end testing](https://rasa.com/docs/rasa/user-guide/testing
 | **Unibot:** | To μάθημα Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες διδάσκεται την/τις ημέρα/-ες Τετάρτη με τον/τους καθηγητή/-ές Γρηγοριάδου Μ., Χαλάτσης Κ. και τις ώρες 11:00-12:00, 12:00-13:00  στην/στις αίθουσα/-ες: Αμφιθέατρο |
 | **User:** | ευχαριστώ |
 | **Unibot:** | κανένα πρόβλημα! |
+
+
+A detailed report of the project can be found [here](https://drive.google.com/file/d/1rU-FdwmGZ9Y6yIH5GpHDhdjnewzQuoJv/view?usp=sharing)
