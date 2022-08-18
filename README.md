@@ -11,7 +11,7 @@ When talking to the bot, a database is automatically created and connected to th
 
 ### Make sure you have python==3.8 in your working environment
 
- It's recommended to create virtual environment to make sure no there will be no conflicts on dependencies:
+ It's recommended to create virtual environment to make sure there will be no conflicts on dependencies:
 
  ```bash
  conda create --name myenv python=3.8 --no-default-packages
