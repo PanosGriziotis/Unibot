@@ -8,14 +8,14 @@ A detailed report of the project can be found [here](https://drive.google.com/fi
 
 ## Installation 
 
-**Make sure you have python==3.8 in your working environment**
+Make sure you have python==3.8 in your working environment.
 
  It's recommended to create virtual environment to make sure there will be no conflicts on dependencies:
 
  ```bash
  conda create --name myenv python=3.8 --no-default-packages
  ```
-**Install packages:**
+Install packages:
 
 ```bash
 pip install -r requirements.txt
