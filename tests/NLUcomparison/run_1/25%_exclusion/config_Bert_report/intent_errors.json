@@ -1,0 +1,18 @@
+[
+  {
+    "text": "Θέλω να μάθω για το αντικείμενο ενός μαθήματος",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.25250500440597534
+    }
+  },
+  {
+    "text": "δυσκολεύομαι να θυμηθώ. Μπορείς να βοηθήσεις;",
+    "intent": "dont_know",
+    "intent_prediction": {
+      "name": "inform_course_name",
+      "confidence": 0.5064540505409241
+    }
+  }
+]

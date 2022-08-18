@@ -1,0 +1,72 @@
+version: "2.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- inform_num_semester:
+    use_entities: []
+- inform_course_name:
+    use_entities: []
+
+- request_course_general_info
+- request_course_description
+- request_course_schedule
+- greeting
+- thankyou
+- dont_know
+
+entities:
+- num_semester
+- course_name
+
+slots:
+  request_type:
+    type: any
+  num_semester:
+    type: any
+    influence_conversation: false
+  course_name:
+    type: any
+    influence_conversation: false
+
+responses:
+  utter_greeting:
+  - text: "Γειά σου! Μιλάς με το Unibot, τον ακαδημαϊκό βοηθό. Μπορώ να σου λύσω απορίες για όποιο μάθημα σε ενδιαφέρει. Πως μπορώ να σε βοηθήσω?"
+  utter_ask_num_semester:
+  - text: "Οκ. Ποιό είναι το εξάμηνό σου;"
+  utter_ask_course_name:
+  - text: "Ποιό είναι το όνομα του μαθήματος που σε ενδιαφέρει;"
+  utter_you_are_welcome:
+  - text: "Κανένα πρόβλημα!"
+  utter_please_rephrase:
+  - text: "Δεν κατάλαβα τι είπες ακριβώς. Μπορείς να το ξαναπείς;"
+  utter_default:
+  - text: "Δεν κατάλαβα τι εννοείς. Μπορείς να επαναλάβεις;"
+
+actions:
+  - validate_course_form
+  - action_supply_answer_to_user
+  - action_help_user
+  - action_restart
+
+forms:
+  course_form:
+    required_slots:
+        request_type:
+          - type: from_trigger_intent
+            value: description
+            intent: request_course_description
+          - type: from_trigger_intent
+            value: schedule
+            intent: request_course_schedule
+          - type: from_trigger_intent
+            value: general
+            intent: request_course_general_info
+        num_semester:
+          - type: from_entity
+            entity: num_semester
+        course_name:
+          - type: from_entity
+            entity: course_name

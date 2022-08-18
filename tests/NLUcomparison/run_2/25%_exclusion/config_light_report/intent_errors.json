@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Θέλω να μάθω για το αντικείμενο ενός μαθήματος",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.48250988125801086
+    }
+  },
+  {
+    "text": "Θέλω πληροφορίες σχετικά με ένα μάθημα",
+    "intent": "request_course_general_info",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.27010831236839294
+    }
+  },
+  {
+    "text": "Αλγόριθμοι & Πολυπλοκότητα",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.343203067779541
+    }
+  }
+]

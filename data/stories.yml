@@ -1,0 +1,103 @@
+version: "2.0"
+
+stories:
+
+  - story: Course Description
+    steps:
+    - intent: request_course_description
+    - action: course_form
+    - active_loop: course_form
+    - slot_was_set:
+      - request_type: description
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Γραμμική Άλγεβρα
+    - active_loop: null
+    - action: action_supply_answer_to_user
+
+  - story: Course Schedule
+    steps:
+    - intent: request_course_schedule
+    - action: course_form
+    - slot_was_set:
+      - request_type: schedule
+    - active_loop: course_form
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική
+    - active_loop: null
+    - action: action_supply_answer_to_user
+  
+  - story: Unhappy Path Example
+    steps:
+    - intent: request_course_general_info
+    - action: course_form
+    - slot_was_set:
+      - request_type: general
+    - active_loop:  course_form
+    - intent: dont_know
+    - action: action_help_user
+    - action: course_form
+    - slot_was_set:
+      - requested_slot: num_semester
+    - slot_was_set:
+      - course_name: 1ο
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες
+    - active_loop: null
+    - action: action_supply_answer_to_user
+
+  - story: Restart Example
+    steps:
+    - intent: thankyou
+    - action: utter_you_are_welcome
+    - action: action_restart
+    - intent: request_course_general_info
+    - action: course_form
+    - slot_was_set:
+      - request_type: general
+    - active_loop:  course_form
+    - slot_was_set:
+      - requested_slot: num_semester
+    - slot_was_set:
+      - course_name: 7ο εξάμηνο
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες
+    - active_loop: null
+    - action: action_supply_answer_to_user
+
+
+  - story: Validation story
+    steps:
+    - intent: request_course_schedule
+    - action: course_form
+    - active_loop: course_form
+    - slot_was_set:
+      - requested_slot: num_semester
+    - slot_was_set:
+      - num_semester: 2ο εξάμηνο
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: null
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Δικαιο και Οικονομία
+    - slot_was_set:
+      - requested_slot: course_name
+    - slot_was_set:
+      - course_name: Ανάλυση Ι
+    - slot_was_set:
+      - requested_slot: null
+    - active_loop: null
+    - action: action_supply_answer_to_user
+    - intent: thankyou
+    - action: utter_you_are_welcome
+    - action: action_restart

@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Θέλω να μάθω για το αντικείμενο ενός μαθήματος",
+    "intent": "request_course_description",
+    "intent_prediction": {
+      "name": "request_course_schedule",
+      "confidence": 0.6166511178016663
+    }
+  },
+  {
+    "text": "7ο",
+    "intent": "inform_num_semester",
+    "intent_prediction": {
+      "name": "dont_know",
+      "confidence": 0.3348080813884735
+    }
+  },
+  {
+    "text": "δυσκολεύομαι να θυμηθώ. Μπορείς να βοηθήσεις;",
+    "intent": "dont_know",
+    "intent_prediction": {
+      "name": "inform_course_name",
+      "confidence": 0.4758828580379486
+    }
+  },
+  {
+    "text": "δεν θυμάμαι",
+    "intent": "dont_know",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.7874020338058472
+    }
+  }
+]

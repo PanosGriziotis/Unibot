@@ -1,0 +1,26 @@
+[
+  {
+    "text": "οκ ευχαριστώ γειά",
+    "intent": "thankyou",
+    "intent_prediction": {
+      "name": "greeting",
+      "confidence": 0.46726876497268677
+    }
+  },
+  {
+    "text": "Γραμμική Άλγεβρα",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "dont_know",
+      "confidence": 0.2991921603679657
+    }
+  },
+  {
+    "text": "Φωτονική",
+    "intent": "inform_course_name",
+    "intent_prediction": {
+      "name": "dont_know",
+      "confidence": 0.275534987449646
+    }
+  }
+]

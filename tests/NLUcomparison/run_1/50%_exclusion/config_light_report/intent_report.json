@@ -1,0 +1,76 @@
+{
+  "dont_know": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "request_course_general_info": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "request_course_schedule": 1
+    }
+  },
+  "request_course_description": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "thankyou": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "request_course_schedule": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "greeting": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "inform_num_semester": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "inform_course_name": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "thankyou": 1,
+      "request_course_general_info": 1
+    }
+  },
+  "accuracy": 0.8,
+  "macro avg": {
+    "precision": 0.7916666666666666,
+    "recall": 0.7916666666666666,
+    "f1-score": 0.7625,
+    "support": 15
+  },
+  "weighted avg": {
+    "precision": 0.8444444444444444,
+    "recall": 0.8,
+    "f1-score": 0.7799999999999999,
+    "support": 15
+  }
+}

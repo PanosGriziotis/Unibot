@@ -1,0 +1,52 @@
+[
+  {
+    "text": "4ο Εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "4ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "3ο εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "3ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Θέλω να μάθω για τη Γραμμική Άλγεβρα",
+    "entities": [
+      {
+        "start": 20,
+        "end": 36,
+        "value": "Γραμμική Άλγεβρα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "[Ανάπτυξη Λογισμικού για Πληροφοριακά Συστήματα] (course_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 10,
+        "end": 20,
+        "confidence_entity": 0.5431833863258362,
+        "value": "Λογισμικού",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "text": "4ο Εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "4ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "3ο εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "3ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Θέλω να μάθω για τη Γραμμική Άλγεβρα",
+    "entities": [
+      {
+        "start": 20,
+        "end": 36,
+        "value": "Γραμμική Άλγεβρα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Αλγόριθμοι & Πολυπλοκότητα",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Αλγόριθμοι & Πολυπλοκότητα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Θεωρία Πληροφορίας και Κωδίκων",
+    "entities": [
+      {
+        "start": 0,
+        "end": 30,
+        "value": "Θεωρία Πληροφορίας και Κωδίκων",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

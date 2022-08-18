@@ -1,0 +1,54 @@
+[
+  {
+    "text": "Θέλω να μάθω και τις ώρες διδασκαλίας του μαθήματος",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 13,
+        "end": 16,
+        "confidence_entity": 0.6868064403533936,
+        "value": "και",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "[Ανάπτυξη Λογισμικού για Πληροφοριακά Συστήματα] (course_name)",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.42356786131858826,
+        "value": "[Ανάπτυξη",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 47,
+        "end": 48,
+        "confidence_entity": 0.29498258233070374,
+        "value": "]",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 49,
+        "end": 50,
+        "confidence_entity": 0.5667849183082581,
+        "value": "(",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "course_name",
+        "start": 61,
+        "end": 62,
+        "confidence_entity": 0.7754205465316772,
+        "value": ")",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

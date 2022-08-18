@@ -1,0 +1,34 @@
+{
+  "course_name": {
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1-score": 0.7499999999999999,
+    "support": 5,
+    "confused_with": {}
+  },
+  "num_semester": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.8333333333333333,
+    "support": 7
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.875,
+    "support": 7
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.8214285714285714,
+    "support": 7
+  }
+}

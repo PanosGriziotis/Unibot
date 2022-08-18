@@ -1,0 +1,23 @@
+[
+  {
+    "text": "Θεωρία Πληροφορίας και Κωδίκων",
+    "entities": [
+      {
+        "start": 0,
+        "end": 30,
+        "value": "Θεωρία Πληροφορίας και Κωδίκων",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9137756824493408,
+        "value": "Θεωρία",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

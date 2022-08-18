@@ -1,0 +1,30 @@
+# This file contains the model configurations
+
+language: el
+
+pipeline:
+  - name: SpacyNLP
+    model: "el_core_news_md"
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 50
+    batch_size: [32, 64]
+    embedding_dimension: 30
+    weight_sparcity: 0.80
+    hidden_layer_sizes:
+      text: [256, 128]
+  - name: SpacyEntityExtractor
+  - name: FallbackClassifier
+    threshold: 0.7
+
+policies:
+- name: TEDPolicy
+  max_history: 50
+  epochs: 50
+- name: RulePolicy

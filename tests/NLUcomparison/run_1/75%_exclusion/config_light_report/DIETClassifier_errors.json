@@ -1,0 +1,64 @@
+[
+  {
+    "text": "Καλημέρα",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "course_name",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.5674327611923218,
+        "value": "Καλημέρα",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "7ο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "7ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "3ο εξάμηνο",
+    "entities": [
+      {
+        "start": 0,
+        "end": 2,
+        "value": "3ο",
+        "entity": "num_semester"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Αλγόριθμοι & Πολυπλοκότητα",
+    "entities": [
+      {
+        "start": 0,
+        "end": 26,
+        "value": "Αλγόριθμοι & Πολυπλοκότητα",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Θεωρία Πληροφορίας και Κωδίκων",
+    "entities": [
+      {
+        "start": 0,
+        "end": 30,
+        "value": "Θεωρία Πληροφορίας και Κωδίκων",
+        "entity": "course_name"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

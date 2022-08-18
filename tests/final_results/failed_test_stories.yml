@@ -1,0 +1,120 @@
+version: "2.0"
+stories:
+- story: A test story with a happy path (C:\Users\panos\Documents\Msc Language Technology\3rd\Dialogue_systems\Unibot\tests\test_stories.yml)
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: request_course_description
+  - action: course_form
+  - active_loop: course_form
+  - intent: inform_num_semester
+    entities:
+    - num_semester: 3ο
+  - slot_was_set:
+    - num_semester: 3ο
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inform_course_name
+    entities:
+    - course_name: Εργαστήριο Κυκλωμάτων και Συστημάτων
+  - slot_was_set:
+    - course_name: Εργαστήριο Κυκλωμάτων και Συστημάτων
+  - action: course_form
+  - active_loop: null
+  - action: action_supply_answer_to_user
+  - intent: thankyou
+  - action: utter_you_are_welcome
+  - action: action_restart
+- story: A test story with a happy path (C:\Users\panos\Documents\Msc Language Technology\3rd\Dialogue_systems\Unibot\tests\test_stories.yml)
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: request_course_shcedule
+  - action: course_form  # predicted: utter_you_are_welcome
+  - active_loop: course_form
+  - intent: inform_num_semester
+    entities:
+    - num_semester: 4ο
+  - slot_was_set:
+    - num_semester: 4ο
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inform_course_name
+  - action: course_form
+  - active_loop: null
+  - action: action_supply_answer_to_user
+  - intent: thankyou
+  - action: utter_you_are_welcome
+  - action: action_restart
+- story: A test story with a happy path (C:\Users\panos\Documents\Msc Language Technology\3rd\Dialogue_systems\Unibot\tests\test_stories.yml)
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: request_course_general_info
+  - action: course_form
+  - active_loop: course_form
+  - intent: inform_num_semester
+    entities:
+    - num_semester: 6ο
+  - slot_was_set:
+    - num_semester: 6ο
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inform_course_name
+    entities:
+    - course_name: Αναγνώριση Προτύπων–Μηχανική Μάθηση
+  - slot_was_set:
+    - course_name: Αναγνώριση Προτύπων–Μηχανική Μάθηση
+  - action: course_form
+  - active_loop: null
+  - action: action_supply_answer_to_user
+  - intent: thankyou
+  - action: utter_you_are_welcome
+  - action: action_restart
+- story: A test story with unhappy path (C:\Users\panos\Documents\Msc Language Technology\3rd\Dialogue_systems\Unibot\tests\test_stories.yml)
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: request_course_shcedule
+  - action: course_form  # predicted: utter_you_are_welcome
+  - active_loop: course_form
+  - intent: dont_know
+  - action: action_help_user
+  - action: course_form
+  - active_loop: course_form
+  - intent: inform_num_semester
+    entities:
+    - num_semester: 5ο
+  - slot_was_set:
+    - num_semester: 5ο
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: inform_course_name
+    entities:
+    - course_name: Σχεδίαση Ψηφιακών Συστημάτων - VHDL
+  - slot_was_set:
+    - course_name: Σχεδίαση Ψηφιακών Συστημάτων - VHDL
+  - action: course_form
+  - active_loop: null
+  - action: action_supply_answer_to_user
+  - intent: thankyou
+  - action: utter_you_are_welcome
+  - action: action_restart
+- story: A test story with unhappy path (C:\Users\panos\Documents\Msc Language Technology\3rd\Dialogue_systems\Unibot\tests\test_stories.yml)
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - intent: request_course_description
+  - action: course_form
+  - active_loop: course_form
+  - intent: inform_num_semester
+    entities:
+    - num_semester: 8ο
+  - slot_was_set:
+    - num_semester: 8ο
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: dont_know
+  - action: action_help_user
+  - action: course_form
+  - active_loop: course_form
+  - active_loop: null
+  - action: action_supply_answer_to_user
+  - intent: thankyou
+  - action: utter_you_are_welcome
+  - action: action_restart
