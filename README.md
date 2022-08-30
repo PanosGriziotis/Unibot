@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 Step1:
  
-Use `rasa train` to train a new model. I you want to use the already train model skip this step.
+Use `rasa train` to train a new model. I you want to use the pre-trained model skip this step.
 
 Step2: 
 
