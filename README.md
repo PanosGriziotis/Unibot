@@ -1,6 +1,6 @@
-# Unibot: Building A Virtual Assistant for Students with Rasa
+# Unibot: Building A Virtual Assistant for College Students with Rasa
 
-Unibot is a demo version of a task-oriented dialogue system that helps Greek speaking college students with requests related to a course of their interest. It is designed to fulfill different requests based on the type of information a student desires to retrieve about a specific course of their semester. 
+Unibot is a task-oriented dialogue system that helps Greek speaking college students with requests related to a course of their interest. It is designed to fulfill different requests based on the type of information a student desires to retrieve about a specific course of their semester. 
 
 When talking to the bot, a database is automatically created and connected to the system’s actions, containing information gathered from the web. The selected source is the official website of the Department of Informatics and Telecommunication of the National Kapodistrian University of Athens (https://www.di.uoa.gr). For this demo version the data scope was limited to the undergraduate curriculum and the schedule for the 2019-2020 academic year.
 
