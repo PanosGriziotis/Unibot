@@ -10,12 +10,12 @@ Please [click here](https://drive.google.com/file/d/16h3I6WvgVz6VmVbbYQcY44ZhkGq
 
 Make sure you have python==3.8 in your working environment.
 
- It's recommended to create virtual environment to ensure there will be no conflicts on dependencies:
+ It's recommended to create virtual environment to install packages:
 
  ```bash
- conda create --name myenv python=3.8 --no-default-packages
+ python3 -m venv venv
  ```
-Install packages:
+Install packages after activating venv:
 
 ```bash
 pip install -r requirements.txt
