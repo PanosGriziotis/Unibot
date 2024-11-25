@@ -2,15 +2,15 @@
 
 Unibot is a task-oriented dialogue system that helps Greek speaking college students with requests related to a course of their interest. It is designed to fulfill different requests based on the type of information a student desires to retrieve about a specific course of their semester. 
 
-When talking to the bot, a database is automatically created and connected to the system’s actions, containing information gathered from the web. The selected source is the official website of the Department of Informatics and Telecommunication of the National Kapodistrian University of Athens (https://www.di.uoa.gr). For this demo version the data scope was limited to the undergraduate curriculum and the schedule for the 2019-2020 academic year.
+When talking to the bot, a database is automatically created and connected to the system’s actions, containing information gathered from the web. The selected source is the official website of the Department of Informatics and Telecommunication of the National Kapodistrian University of Athens (https://www.di.uoa.gr). The data scope is limited to the undergraduate curriculum and the schedule for the 2019-2020 academic year.
 
 Please [click here](https://drive.google.com/file/d/16h3I6WvgVz6VmVbbYQcY44ZhkGqMFDl5/) to access a more detailed report on the project.
 
 ## Installation 
 
-Make sure you have python==3.8 in your working environment.
+Make sure you have python>=3.8 in your working environment.
 
- It's recommended to create virtual environment to install packages:
+ It's recommended to create virtual environment to install required packages:
 
  ```bash
  python3 -m venv venv
