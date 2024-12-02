@@ -4,9 +4,16 @@ Unibot is a task-oriented dialogue system that helps Greek speaking college stud
 
 When talking to the bot, a database is automatically created and connected to the system’s actions, containing information gathered from the web. The selected source is the official website of the Department of Informatics and Telecommunication of the National Kapodistrian University of Athens (https://www.di.uoa.gr). The data scope is limited to the undergraduate curriculum and the schedule for the 2019-2020 academic year.
 
+## Things you can ask the bot
+
+The bot currently has three skills. You can ask it to:
+1. Tell you the detailed schedule of a course's class (day, time, prodessor, classroom)
+2. Give you a summary of a course's subject
+3. Give general information for a course and carry through both the above tasks at the same time.
+   
 Please [click here](https://drive.google.com/file/d/16h3I6WvgVz6VmVbbYQcY44ZhkGqMFDl5/) to access a more detailed report on the project.
 
-## Installation 
+## Set up 
 
 Make sure you have python>=3.8 in your working environment.
 
@@ -64,14 +71,6 @@ Note that `--debug` mode will produce a lot of output meant to help you understa
 
 `tests/` - test files, different training configurations' comparisons, final dialogue model evaluation results.
 
-
-
-## Things you can ask the bot
-
-The bot currently has three skills. You can ask it to:
-1. Tell you the detailed schedule of a course's class (day, time, prodessor, classroom)
-2. Give you a summary of a course's subject
-3. Give general information for a course and carry through both the above tasks at the same time.
 
 # Testing the bot
 
